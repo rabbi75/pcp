@@ -1,0 +1,881 @@
+/*most important
+here included media & form scss files*/
+/*.........form section........*/
+.input-white {
+  font-size: 15px;
+  padding: 9px 10px;
+  font-family: Lato;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.input-white:focus {
+  outline: none;
+  transition: 0.35s ease-in-out;
+}
+.input-white:focus {
+  border: 1px solid #00B22D;
+}
+
+.input-primary {
+  font-size: 15px;
+  padding: 9px 10px;
+  font-family: Lato;
+  background-color: transparent;
+  color: #353537;
+  border: 1px solid #353537;
+}
+.input-primary:focus {
+  outline: none;
+  transition: 0.35s ease-in-out;
+}
+.input-primary:focus {
+  border: 1px solid #00B22D;
+}
+
+.form-btn-green {
+  padding: 10px 30px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #00B22D;
+  border: none;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #ffffff;
+}
+.form-btn-green:hover {
+  transition: 0.2s;
+  cursor: pointer;
+}
+.form-btn-green:hover {
+  background-color: #008329;
+}
+
+/*.........custom style........*/
+.active {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+.active:hover {
+  border: 1px solid #00B22D;
+  border-radius: 4px;
+}
+
+.sticy {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  animation: fade 0.5s ease-in;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*..........animation.........*/
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*all account pannel-signup,login, reset pass, get quote, my account*/
+/*signup page */
+.user-signup {
+  padding-top: 2.5em;
+  padding-bottom: 1em;
+}
+@media only screen and (min-width: 768px) {
+  .user-signup {
+    padding: 0;
+  }
+}
+.user-signup .signup-page {
+  width: 86%;
+  margin: 65px auto;
+}
+@media only screen and (min-width: 768px) {
+  .user-signup .signup-page {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .user-signup .signup-page {
+    width: 49%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .user-signup .signup-page {
+    width: 41%;
+  }
+}
+.user-signup .signup-page .page-logo {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.user-signup .signup-page .signup-panel {
+  border: 1px solid #a0a0a0;
+  padding: 30px;
+}
+.user-signup .signup-page .signup-panel form h1 {
+  text-transform: uppercase;
+}
+.user-signup .signup-page .signup-panel form h3 {
+  padding: 20px 0 10px;
+}
+.user-signup .signup-page .signup-panel form input[type=text] {
+  width: 94.5%;
+}
+.user-signup .signup-page .signup-panel form input[type=email] {
+  width: 94.5%;
+}
+.user-signup .signup-page .signup-panel form input[type=password] {
+  width: 94.5%;
+}
+.user-signup .signup-page .signup-panel form input[type=checkbox] {
+  margin-top: 25px;
+}
+.user-signup .signup-page .signup-panel form span {
+  font-size: 18px;
+  padding-left: 5px;
+}
+.user-signup .signup-page .signup-panel form input[type=submit] {
+  width: 100%;
+  margin-top: 10px;
+}
+.user-signup .signup-page .signup-panel .bottom-link {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/*login page */
+.user-login {
+  padding-top: 2.5em;
+  padding-bottom: 1em;
+}
+@media only screen and (min-width: 768px) {
+  .user-login {
+    padding: 0;
+  }
+}
+.user-login .login-page {
+  width: 86%;
+  margin: 65px auto;
+}
+@media only screen and (min-width: 768px) {
+  .user-login .login-page {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .user-login .login-page {
+    width: 49%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .user-login .login-page {
+    width: 41%;
+  }
+}
+.user-login .login-page .page-logo {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.user-login .login-page .login-panel {
+  border: 1px solid #a0a0a0;
+  padding: 30px;
+}
+.user-login .login-page .login-panel form h1 {
+  text-transform: uppercase;
+}
+.user-login .login-page .login-panel form h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.user-login .login-page .login-panel form input[type=email] {
+  width: 94.5%;
+}
+.user-login .login-page .login-panel form input[type=password] {
+  width: 94.5%;
+}
+.user-login .login-page .login-panel form input[type=submit] {
+  width: 100%;
+  margin-top: 20px;
+}
+.user-login .login-page .login-panel .bottom-link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media only screen and (min-width: 576px) {
+  .user-login .login-page .login-panel .bottom-link {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.user-login .login-page .login-panel .bottom-link a {
+  padding-bottom: 8px;
+}
+
+/*reset password page */
+.pass-reset {
+  padding-top: 2.5em;
+  padding-bottom: 1em;
+}
+@media only screen and (min-width: 768px) {
+  .pass-reset {
+    padding: 0;
+  }
+}
+.pass-reset .pass-reset-page {
+  width: 86%;
+  margin: 65px auto;
+}
+@media only screen and (min-width: 768px) {
+  .pass-reset .pass-reset-page {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .pass-reset .pass-reset-page {
+    width: 49%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .pass-reset .pass-reset-page {
+    width: 41%;
+  }
+}
+.pass-reset .pass-reset-page .page-logo {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.pass-reset .pass-reset-page .pass-reset-panel {
+  border: 1px solid #a0a0a0;
+  padding: 30px;
+}
+.pass-reset .pass-reset-page .pass-reset-panel form h1 {
+  text-transform: uppercase;
+}
+.pass-reset .pass-reset-page .pass-reset-panel form h3 {
+  padding-bottom: 10px;
+}
+.pass-reset .pass-reset-page .pass-reset-panel form p {
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
+.pass-reset .pass-reset-page .pass-reset-panel form input[type=email] {
+  width: 94.5%;
+}
+.pass-reset .pass-reset-page .pass-reset-panel form input[type=submit] {
+  width: 100%;
+  margin-top: 10px;
+}
+.pass-reset .pass-reset-page .pass-reset-panel .bottom-link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* get free quote page */
+.get-quote-section {
+  margin: 60px 0;
+}
+.get-quote-section .get-quote-wrap {
+  width: 80%;
+  margin: auto;
+}
+.get-quote-section .get-quote-wrap .quote-header {
+  text-align: center;
+}
+.get-quote-section .get-quote-wrap .quote-header h1 {
+  margin: 15px 0;
+}
+.get-quote-section .get-quote-wrap .quote-header p {
+  margin-bottom: 15px;
+}
+.get-quote-section .get-quote-wrap .quote-header .alert-info {
+  background-color: #f9f9f9;
+  padding: 25px 40px 20px;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  .get-quote-section .get-quote-wrap .quote-header .alert-info {
+    text-align: left;
+  }
+}
+.get-quote-section .get-quote-wrap form .form-top .top-name {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .get-quote-section .get-quote-wrap form .form-top .top-name {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    column-gap: 6%;
+  }
+}
+.get-quote-section .get-quote-wrap form .form-top .top-name .fname {
+  margin-bottom: 25px;
+}
+.get-quote-section .get-quote-wrap form .form-top .top-name .fname h3 {
+  padding-bottom: 10px;
+}
+.get-quote-section .get-quote-wrap form .form-top .top-name .fname input[type=text] {
+  width: 95%;
+}
+@media only screen and (min-width: 576px) {
+  .get-quote-section .get-quote-wrap form .form-top .top-name .fname input[type=text] {
+    width: 95%;
+  }
+}
+.get-quote-section .get-quote-wrap form .form-top .top-name .lname {
+  margin-bottom: 25px;
+}
+.get-quote-section .get-quote-wrap form .form-top .top-name .lname h3 {
+  padding-bottom: 10px;
+}
+.get-quote-section .get-quote-wrap form .form-top .top-name .lname input[type=text] {
+  width: 95%;
+}
+.get-quote-section .get-quote-wrap form .form-top .top-email {
+  margin-bottom: 25px;
+}
+.get-quote-section .get-quote-wrap form .form-top .top-email .email-address h3 {
+  padding-bottom: 10px;
+}
+.get-quote-section .get-quote-wrap form .form-top .top-email .email-address input[type=email] {
+  width: 95%;
+}
+@media only screen and (min-width: 576px) {
+  .get-quote-section .get-quote-wrap form .form-top .top-email .email-address input[type=email] {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .get-quote-section .get-quote-wrap form .form-top .top-email .email-address input[type=email] {
+    width: 97.5%;
+  }
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-header {
+  padding: 0 0 10px;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item {
+    display: grid;
+    grid-template-columns: 46.5% 46.5%;
+    column-gap: 7%;
+  }
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-left .custom-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  user-select: none;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-left .custom-label .tooltip {
+  background-color: #353537;
+  border-radius: 55%;
+  color: #ffffff;
+  line-height: 1;
+  padding: 1px 6px;
+  font-size: 12px;
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-left .custom-label .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #353537;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  font-size: 15px;
+  line-height: 18px;
+  right: -100px;
+  bottom: 14px;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-left .custom-label .tooltip:hover .tooltiptext {
+  visibility: visible;
+  transition: all 0.5s ease-out;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-left .custom-label input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-left .custom-label input:checked ~ .checkmark {
+  background-color: #00B22D;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-left .custom-label input:checked ~ .checkmark:after {
+  display: block;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-left .custom-label .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-left .checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #a0a0a0;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-left .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-left .checkmark:focus:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-right .custom-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  user-select: none;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-right .custom-label .tooltip {
+  background-color: #353537;
+  border-radius: 55%;
+  color: #ffffff;
+  line-height: 1;
+  padding: 1px 6px;
+  font-size: 12px;
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-right .custom-label .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #353537;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  font-size: 15px;
+  line-height: 18px;
+  transition: 0.5s;
+  right: -100px;
+  bottom: 14px;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-right .custom-label .tooltip:hover .tooltiptext {
+  visibility: visible;
+  transition: 0.5s ease out;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-right .custom-label input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-right .custom-label input:checked ~ .checkmark {
+  background-color: #00B22D;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-right .custom-label input:checked ~ .checkmark:after {
+  display: block;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-right .custom-label .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-right .checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #a0a0a0;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-right .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.get-quote-section .get-quote-wrap form .form-checkbox .checkbox-item .item-right .checkmark:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.get-quote-section .get-quote-wrap form .img-quantity-resize {
+  display: block;
+  margin-top: 25px;
+}
+@media only screen and (min-width: 768px) {
+  .get-quote-section .get-quote-wrap form .img-quantity-resize {
+    display: grid;
+    grid-template-columns: 46% 46%;
+    column-gap: 8%;
+  }
+}
+.get-quote-section .get-quote-wrap form .img-quantity-resize .img-quantity {
+  margin-bottom: 15px;
+}
+.get-quote-section .get-quote-wrap form .img-quantity-resize .img-quantity h3 {
+  padding: 0 0 10px;
+}
+.get-quote-section .get-quote-wrap form .img-quantity-resize .img-quantity input[type=number] {
+  width: 95%;
+}
+.get-quote-section .get-quote-wrap form .img-quantity-resize .img-resize h3 {
+  padding-bottom: 10px;
+}
+.get-quote-section .get-quote-wrap form .img-quantity-resize .img-resize .custom-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  user-select: none;
+}
+.get-quote-section .get-quote-wrap form .img-quantity-resize .img-resize .custom-radio input {
+  position: absolute;
+  opacity: 0;
+}
+.get-quote-section .get-quote-wrap form .img-quantity-resize .img-resize .custom-radio input:checked ~ .checkmark {
+  background-color: #00B22D;
+}
+.get-quote-section .get-quote-wrap form .img-quantity-resize .img-resize .custom-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+.get-quote-section .get-quote-wrap form .img-quantity-resize .img-resize .custom-radio .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.get-quote-section .get-quote-wrap form .img-quantity-resize .img-resize .checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #a0a0a0;
+  border-radius: 50%;
+}
+.get-quote-section .get-quote-wrap form .img-quantity-resize .img-resize .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+@media only screen and (min-width: 576px) {
+  .get-quote-section .get-quote-wrap form .resize-yes {
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .get-quote-section .get-quote-wrap form .resize-yes {
+    display: grid;
+    grid-template-columns: 46% 46%;
+    column-gap: 8%;
+  }
+}
+.get-quote-section .get-quote-wrap form .resize-yes .img-width h3 {
+  padding: 15px 0 10px;
+}
+.get-quote-section .get-quote-wrap form .resize-yes .img-width .width-box input[type=number] {
+  width: 61%;
+}
+@media only screen and (min-width: 576px) {
+  .get-quote-section .get-quote-wrap form .resize-yes .img-width .width-box input[type=number] {
+    width: 79%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .get-quote-section .get-quote-wrap form .resize-yes .img-width .width-box input[type=number] {
+    width: 68%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .get-quote-section .get-quote-wrap form .resize-yes .img-width .width-box input[type=number] {
+    width: 74%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .get-quote-section .get-quote-wrap form .resize-yes .img-width .width-box input[type=number] {
+    width: 80%;
+  }
+}
+.get-quote-section .get-quote-wrap form .resize-yes .img-width .width-box span {
+  border: 1px solid #353537;
+  position: relative;
+  left: -3px;
+  top: 0;
+  border-left: 0;
+  padding: 8.5px 20px;
+  background-color: #a0a0a0;
+  font-weight: bold;
+}
+.get-quote-section .get-quote-wrap form .resize-yes .img-height h3 {
+  padding: 15px 0 10px;
+}
+.get-quote-section .get-quote-wrap form .resize-yes .img-height .height-box input[type=number] {
+  width: 61%;
+}
+@media only screen and (min-width: 576px) {
+  .get-quote-section .get-quote-wrap form .resize-yes .img-height .height-box input[type=number] {
+    width: 79%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .get-quote-section .get-quote-wrap form .resize-yes .img-height .height-box input[type=number] {
+    width: 68%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .get-quote-section .get-quote-wrap form .resize-yes .img-height .height-box input[type=number] {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .get-quote-section .get-quote-wrap form .resize-yes .img-height .height-box input[type=number] {
+    width: 80%;
+  }
+}
+.get-quote-section .get-quote-wrap form .resize-yes .img-height .height-box span {
+  border: 1px solid #353537;
+  position: relative;
+  left: -3px;
+  top: 0;
+  border-left: 0;
+  padding: 8.5px 20px;
+  background-color: #a0a0a0;
+  font-weight: bold;
+}
+.get-quote-section .get-quote-wrap form .crop-straight {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.get-quote-section .get-quote-wrap form .crop-straight .custom-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  user-select: none;
+  font-weight: bold;
+}
+.get-quote-section .get-quote-wrap form .crop-straight .custom-label .tooltip {
+  background-color: #353537;
+  border-radius: 55%;
+  color: #ffffff;
+  line-height: 1;
+  padding: 1px 6px;
+  font-size: 12px;
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+}
+.get-quote-section .get-quote-wrap form .crop-straight .custom-label .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #353537;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: normal;
+  right: -100px;
+  bottom: 14px;
+}
+.get-quote-section .get-quote-wrap form .crop-straight .custom-label .tooltip:hover .tooltiptext {
+  visibility: visible;
+  transition: 0.5s ease-out;
+}
+.get-quote-section .get-quote-wrap form .crop-straight .custom-label input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.get-quote-section .get-quote-wrap form .crop-straight .custom-label input:checked ~ .checkmark {
+  background-color: #00B22D;
+}
+.get-quote-section .get-quote-wrap form .crop-straight .custom-label input:checked ~ .checkmark:after {
+  display: block;
+}
+.get-quote-section .get-quote-wrap form .crop-straight .custom-label .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.get-quote-section .get-quote-wrap form .crop-straight .checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #a0a0a0;
+}
+.get-quote-section .get-quote-wrap form .crop-straight .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.get-quote-section .get-quote-wrap form .crop-straight .checkmark:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.get-quote-section .get-quote-wrap form .comments h3 {
+  margin: 15px 0 15px;
+}
+.get-quote-section .get-quote-wrap form .comments textarea {
+  width: 95%;
+  resize: vertical;
+}
+@media only screen and (min-width: 768px) {
+  .get-quote-section .get-quote-wrap form .comments textarea {
+    width: 96%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .get-quote-section .get-quote-wrap form .comments textarea {
+    width: 97.5%;
+  }
+}
+.get-quote-section .get-quote-wrap form .form-btn {
+  text-align: right;
+  margin-top: 15px;
+}
+.get-quote-section .get-quote-wrap form .form-btn small {
+  margin-top: 15px;
+}
+
+/*my account page*/
+/*custom header*/
+.header-section header .navbar .last-nav ul li a {
+  background-color: unset;
+}
+
+.my-account-section .my-account-wrap {
+  width: 90%;
+  margin: auto;
+}
+.my-account-section .my-account-wrap .custom-title {
+  padding-bottom: 0;
+}
+.my-account-section .my-account-wrap h2 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media only screen and (min-width: 576px) {
+  .my-account-section .my-account-wrap h2 {
+    text-align: unset;
+  }
+}
+.my-account-section .my-account-wrap p {
+  margin-bottom: 15px;
+}
+.my-account-section .my-account-wrap h4 {
+  margin-bottom: 15px;
+}
+.my-account-section .my-account-wrap .my-account-btn {
+  text-align: right;
+}
+.my-account-section .my-account-wrap .ftp-account {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.my-account-section .my-account-wrap .ftp-account .ftp-btn {
+  text-align: right;
+}
+
+/*my account page*/
+.my-quotes-page-section {
+  overflow-x: auto;
+}
+.my-quotes-page-section .my-quote-btn {
+  text-align: center;
+}
+@media only screen and (min-width: 576px) {
+  .my-quotes-page-section .my-quote-btn {
+    text-align: right;
+  }
+}
+.my-quotes-page-section table {
+  width: 100%;
+  overflow-x: scroll;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 576px) {
+  .my-quotes-page-section table {
+    overflow-x: unset;
+  }
+}
+.my-quotes-page-section table tr th {
+  border: 1px solid gray;
+  background-color: #a0a0a0;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.75rem;
+}
+.my-quotes-page-section table tr td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.75rem;
+  border: 1px solid gray;
+}
+.my-quotes-page-section table tr td .badge {
+  background-color: #00B22D;
+  color: white;
+  border-radius: 4px;
+  padding: 5px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+/*# sourceMappingURL=accountpannel.css.map */

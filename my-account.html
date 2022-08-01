@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>My Account | Cloud Clipping Path</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/accountpannel.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+    <section class="header-section"><!--header start-->
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="images/ccp-logo-white.png" alt="Cloud clipping path logo"></a>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div class="navbar">
+                    <nav class="first-nav">
+                        <!-- <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="how-it-works.html">How it works</a></li>
+                            <li><a href="get-quote.html">Get Quote</a></li>
+                        </ul> -->
+                    </nav>
+                    
+                    <nav class="last-nav">
+                        <ul>
+                            <li><a href="login.html">My Order</a></li>
+                            <li><a href="login.html">Quotes</a></li>
+                            <li><a href="login.html">My Account</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </section><!--header end-->
+
+    <section class="my-account-section">
+        <div class="container">
+            <div class="my-account-wrap">
+                <div class="page-section-title custom-title">
+                    <h1>Settings</h1>
+                </div>
+                <form>
+                    <h2>Account information</h2>
+                    <div class="name input-group">
+                        <div class="fname input-single">
+                            <h3>First name*</h3>
+                            <input type="text" name="fristName" class="input-primary" placeholder="Type your first name" required>
+                        </div>
+                        <div class="lname input-single">
+                            <h3>Lastst name*</h3>
+                            <input type="text" name="lastName" class="input-primary" placeholder="Type your last name" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-single">
+                            <h3>Email*</h3>
+                            <input type="email" name="email" class="input-primary" placeholder="Type your email here" required>
+                            <div class="custom-checkbox">
+                                <label class="custom-label">Receive free eCommerce & product photogrpahy tips
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-single">
+                            <h3>Phone*</h3>
+                            <input type="text" name="phoneNo" class="input-primary" placeholder="Type your phone no here" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-single">
+                            <h3>Company name*</h3>
+                            <input type="email" name="companyName" class="input-primary" placeholder="Type your company neme here">
+                        </div>
+                        <div class="input-single">
+                            <h3>Work phone*</h3>
+                            <input type="text" name="phoneNo" class="input-primary" placeholder="Type your work phone no here">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-single">
+                            <h3>Website*</h3>
+                            <input type="text" name="website" class="input-primary" placeholder="Type your website url here">
+                        </div>
+                        <div class="input-single">
+                            <h3>VAT number*</h3>
+                            <input type="text" name="vatNumber" class="input-primary" placeholder="Type your vat no here">
+                            <small>If your business is registered for VAT in the E.U., enter your VAT number here, starting with the two-digit country code, i.e. GB123456789.</small>
+                        </div>
+                    </div>
+                    <h2>Billing address</h2>
+                    <div class="input-group">
+                        <div class="input-single">
+                            <h3>Address line 1*</h3>
+                            <input type="text" name="addressOne" class="input-primary" placeholder="Type your address here" required>
+                        </div>
+                        <div class="input-single">
+                            <h3>Address line 2</h3>
+                            <input type="text" name="addressTwo" class="input-primary" placeholder="Type your address here">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-single">
+                            <h3>City*</h3>
+                            <input type="text" name="city" class="input-primary" placeholder="Type your city here" required>
+                        </div>
+                        <div class="input-single">
+                            <h3>State/Province</h3>
+                            <input type="text" name="state" class="input-primary" placeholder="Type your state/province here">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-single">
+                            <h3>Postal code*</h3>
+                            <input type="text" name="postalCode" class="input-primary" placeholder="Type your city here" required>
+                        </div>
+                        <div class="input-single">
+                            <h3>country</h3>
+                            <input type="text" name="country" class="input-primary" placeholder="Type your state/province here" required>
+                        </div>
+                    </div>
+                    <div class="my-account-btn">
+                        <input class="form-btn-green" type="button" name="updateBtn" value="UPDATE">
+                    </div>
+                    
+                </form>
+                <div class="ftp-account">
+                    <h2>Ftp account</h2>
+
+                    <p>In addition to uploading and downloading your images through our web-based customer portal, you can also choose the option to use BrickFTP.</p>
+                    <p>BrickFTP is the secure SFTP hosting server we use to transfer image files. We love it because it supports 5TB file uploads on all interfaces and works with popular programs like FileZilla.</p>
+
+                    <h4>Enable BrickFTP account</h4>
+                    <p>Your BrickFTP account is currently disabled. To enable BrickFTP, provide your email address and choose a password. You may disable your BrickFTP account at any time.</p>
+
+                    <form>
+                        <div class="name input-group">
+                            <div class="fname input-single">
+                                <h3>Email</h3>
+                                <input type="text" name="fristName" class="input-primary" placeholder="Type your email">
+                            </div>
+                            <div class="lname input-single">
+                                <h3>Password</h3>
+                                <input type="password" name="password" class="input-primary" placeholder="Type your password here">
+                                <small>Password must be at least 6 characters long.</small>
+                            </div>
+                        </div>
+                        <div class="ftp-btn">
+                            <input class="form-btn-green" type="button" value="ENABLE FTP ACCOUNT">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="change-pass">
+                    <h2>Change password</h2>
+                    <p>On the <a href="#" class="green-link">login screen</a>, click <strong>Forgot password?</strong> and enter the email address associated with your account. Click <strong>SUBMIT</strong>. We’ll email you a link to reset your password.</p>
+                    <p>If you don’t receive an email within five minutes, check your spam folder.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>

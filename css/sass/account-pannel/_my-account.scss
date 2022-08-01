@@ -1,0 +1,47 @@
+/*my account page*/
+/*custom header*/
+.header-section {
+    header {
+        .navbar {
+            .last-nav {
+                ul li a {
+                    background-color: unset;
+                }
+            }
+        }
+    }
+}
+.my-account-section {
+    .my-account-wrap {
+        width: 90%;
+        margin: auto; 
+        .custom-title {
+            padding-bottom: 0;
+        }
+        h2 {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            text-align: center;
+            @include mobile {
+                text-align: unset;
+            }
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        h4 {
+            margin-bottom: 15px;
+        }
+        .my-account-btn {
+            text-align: right;
+        }
+        .ftp-account {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .ftp-btn {
+                text-align: right;
+            }
+        }
+        
+    }
+}

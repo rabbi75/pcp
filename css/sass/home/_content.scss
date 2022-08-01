@@ -1,0 +1,417 @@
+/*.........content section........*/
+
+/*------------- how it works section ----------*/
+.how-section {
+    .section-title {
+        padding-top: 2em;
+        padding-bottom: 0;
+        @include mobile {
+            padding: 3em;
+        }
+        hr{
+            width: 40%;
+        }
+    }
+    hr{
+        width: 70%;
+    }
+    .figure-wrapper {
+        display: block;
+        @include tab {
+            display: grid;
+            grid-template-columns: 48% 48%;
+            column-gap: 4%;
+            margin-bottom: 0;
+        }
+        @include laptop {
+            grid-template-columns: 22.75% 22.75% 22.75% 22.75%;
+            column-gap: 3%;
+        }
+        .figure{
+            padding-bottom: 50px;
+            @include laptop {
+                padding-bottom: 0;
+            }
+            .icon-request-quote-wrapper{
+                max-width: 100px;
+                max-height: 73px;
+                padding-bottom: 20px;
+                .icon-request-quote {
+                    margin-top: 10px;
+                }
+            }
+            .icon-email-wrapper{
+                max-width: 125px;
+                max-height: 73px;
+                padding-bottom: 20px;
+                .icon-email {
+                    height: 90px;
+                }
+            }
+            .icon-thumbs-up-wrapper{
+                max-width: 90px;
+                max-height: 73px;
+                padding-bottom: 20px;
+                .icon-thumbs-up {
+                    height: 88px;
+                }
+            }
+            .icon-quote-time-wrapper{
+                max-width: 90px;
+                max-height: 73px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    .how-btn {
+        text-align: center;
+        @include laptop {
+            margin-top: 50px;
+        }
+        
+    }
+}
+/*free credit section*/
+.free-credit-section {
+    padding: 2em 0;
+    text-align: center;
+    @include laptop {
+        text-align: left;
+    }
+    .free-credit-text {
+        p {
+            margin-bottom: 45px;
+        }
+
+    }
+    form {
+        text-align: center;
+        @include laptop {
+            text-align: left;
+        }
+        input[type="email"] {
+            width: 45%;
+            margin-bottom: 20px;
+            @include tab {
+                width: 30%;
+            }
+        }
+    }
+}
+/*--------------- pricing section -----------*/
+
+.pricing-section {
+    margin: 0;
+    .section-title hr{
+        width: 60%;
+    }
+    .figure-wrapper {
+        display: block;
+
+        @include tab {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            column-gap: 3.33%;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+    .figure{
+        padding-bottom: 50px;
+        .icon-clipping-path-wrapper{
+            max-width: 120px;
+            max-height: 73px;
+            padding-bottom: 20px;
+        }
+        .icon-drop-shadow-wrapper{
+            max-width: 100px;
+            max-height: 73px;
+            padding-bottom: 20px;
+        }
+        .icon-invisible-mannequin-wrapper{
+            max-width: 70px;
+            max-height: 73px;
+            padding-bottom: 20px;
+            .icon-invisible-mannequin{
+                margin-top:-10px;
+            }
+        }
+    }
+    .pricing-btn{
+        text-align: center;
+    }
+}
+
+/*--------------quote section -------*/
+
+.quote-section {
+    padding-bottom: 30px;
+    .section-title{
+        hr {
+            width: 80%;
+        }
+    }
+    .free-quote-items{
+
+        @include tab {
+            display: grid;
+            grid-template-columns: 25% 25% 44%;
+            column-gap: 3%;
+        }
+        
+        .input-item {
+            padding-bottom: 30px;
+            h3 {
+                margin: 0 0 5px;
+            }
+            input[type=number] {
+                width: 95%;
+                @include tab {
+                    width: 90%;
+                }
+            }
+            select {
+                width: 100%;
+                @include tab {
+                    padding: 8px 10px;
+                    width: 95%;
+                }
+            }
+            input[type=email] {
+                width: 95%;
+                @include tab {
+                    width: 96%;
+                }
+            }
+        }
+    }
+    .quote-btn {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+/*--------------- why choose us section -----------*/
+
+.why-choose-us-section {
+    .section-title hr{
+        width: 40%;
+    }
+    .figure-wrapper {
+        display: block;
+        text-align: center;
+        @include tab {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            column-gap: 3.33%; 
+        }
+    }
+    .figure{
+        .icon-quality-wrapper{
+            max-width: 100px;
+            max-height: 73px;
+            padding-bottom: 30px;
+            .icon-quality {
+                height: 100px;
+                width: 100%;
+                margin-left: 5px;
+            }
+        }
+        .icon-time-wrapper{
+            max-width: 110px;
+            max-height: 73px;
+            padding-bottom: 30px;
+        }
+        .icon-price-wrapper{
+            max-width: 120px;
+            max-height: 73px;
+            padding-bottom: 30px;
+            width: 100px;
+            height: 100%;
+        }
+        h2 {
+            text-transform: uppercase;
+            color: color(myGreen);
+        }
+        p {
+            padding-bottom: 30px;
+            @include tab {
+                padding-bottom: 0;
+            }
+        }
+        
+    }
+    .pricing-btn{
+        text-align: center;
+        @include tab {
+            margin-top: 50px;
+        }
+    }
+}
+
+/*our work section*/
+.our-work {
+    .section-title hr {
+        width: 60%;
+    }
+    figure {
+        text-align: center;
+        img {
+            width: 100%;
+            max-width: 450px;
+        }
+    }
+    .our-work-btn {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    hr {
+        width: 60%;
+    }
+
+}
+/*-------------- about us section ---------*/
+
+.about-us-section {
+    .about-us {
+        .section-title hr {
+            width: 34%;
+        }
+        .section-text {
+            padding-bottom: 30px;
+            p {
+                margin: 0 0 20px;
+            }
+        }
+    }
+}
+/*client feedback section*/
+.client-feedback {
+    hr {
+        width: 60%;
+    }
+    text-align: center;
+    blockquote {
+        @include desktop {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        q {
+            font-style: italic;
+            font-size: 35px;
+            line-height: 45px;
+        }
+        p {
+            font-size: 25px;
+            padding-top: 25px;
+            font-style: italic;
+        }
+    }
+    hr {
+        width: 60%;
+    }
+}
+
+/* Tag Section */
+.tag-section {
+    margin: 60px 0;
+    .tags {
+        @include tab {
+            display: grid;
+            grid-template-columns: 47% 50%;
+            column-gap: 3%;
+        }
+        
+        .tag-left {
+            padding-bottom: 30px;
+            text-align: center;
+            @include laptop {
+                text-align: left;
+            }
+            h4 {
+                margin: 0 0 30px;
+                letter-spacing: 0.5px;
+                line-height: 25px;
+            }
+            form {
+                .email {
+                    width: 80%;
+                    margin-bottom: 20px;
+                    @include tab {
+                        width: 60%;
+                    }
+                    @include laptop {
+                        width: 45%;
+                    }
+                }
+            }
+        }
+        .tag-right {
+            .tags-item {
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    li {
+                        flex: 1;
+                        padding: 5px;
+                        a {
+                            border: 1px solid color(myGray);
+                            display: block;
+                            padding: 8px 10px;
+                            color: color(myGray);
+                            white-space: nowrap;
+                            text-align: center;
+                            line-height: 1;
+                            font-size: 13px;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            transition: 0.5s;
+                            &:hover {
+                                color: color(myGreen);
+                                border-color: color(myGreen);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*cta marketing section*/
+.cta-marketing-section {
+    .cta-marketing {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 80%;
+            margin: auto;
+            @include tab {
+            display: grid;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            grid-template-columns: auto auto;
+        }
+        @include laptop {
+            text-align: unset;
+        }
+        p {
+            margin-bottom: 20px;
+            @include tab {
+                margin-bottom: unset;
+            }
+        }
+    }
+    hr {
+        width: 80%;
+    }
+}
+
+
+
+

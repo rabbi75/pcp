@@ -1,0 +1,102 @@
+/*my account page*/
+// .order-page-header {
+//     background-color: color(primary);
+//         .my-header {
+//             padding: 1.1em 0;
+//             display: flex;
+//             justify-content: space-between;
+//         }
+//     .logo{
+//         width: 25%;
+//         @include mobile {
+//             width: unset;
+//         }
+//         img {
+//            width: 100%;
+//            @include mobile {
+//                width: unset;
+//            }
+//         }
+//         a{
+//             text-decoration: none;
+//             color: color(myWhite);
+//             font-size: 20px;
+//             display: block;
+//         }
+//     }
+//     .my-navbar {
+//         .nav ul{
+//             display: flex;
+//             padding-top: 3px;
+//             @include mobile {
+//                 padding-top: 10px;
+//             }
+//             li {
+//                 list-style-type: none;
+//                 a{
+//                     padding: 0 6px;
+//                     font-size: 12px;
+//                     letter-spacing: 1px;
+//                     color: color(myWhite);
+//                     text-decoration: none;
+//                     transition: 0.2s;
+//                     @include mobile {
+//                         padding: 0 12px;
+//                         font-size: unset;
+
+//                     }
+//                     &:hover{
+//                         color: color(myGreen);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.my-quotes-page-section {
+    overflow-x: auto;
+    .my-quote-btn {
+        text-align: center;
+        @include mobile {
+            text-align: right;
+        }
+    }
+    table {
+        width: 100%;
+        overflow-x: scroll;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+        @include mobile {
+            overflow-x: unset;
+        }
+        tr {
+            th {
+                border: 1px solid gray;
+                background-color: color(myGray);
+                text-align: center;
+                vertical-align: middle;
+                padding: 0.75rem;
+            }
+            td {
+                text-align: center;
+                vertical-align: middle;
+                padding: 0.75rem;
+                border: 1px solid gray;
+                .badge {
+                    background-color: color(myGreen);
+                    color: white;
+                    border-radius: 4px;
+                    //padding: 0.4rem 0.8rem;
+                    padding: 5px;
+                    //font-size: 75%;
+                    font-weight: normal;
+                    line-height: 1;
+                    text-align: center;
+                    white-space: nowrap;
+                    vertical-align: baseline;
+                }
+            }
+        }
+    }
+}

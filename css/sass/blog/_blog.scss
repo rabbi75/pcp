@@ -1,0 +1,233 @@
+/*Blog Header Section */
+.blog-header-section {
+    background-color: color(primary);
+    height: 250px;
+    .blog-header-content {
+        display: flex;
+        justify-content: space-between;
+        .header-text {
+            text-align: center;
+            padding-bottom: 30px;
+            @include mobile {
+                padding-top: 30px;
+            }
+            @include tab {
+                text-align: unset;
+            }
+            h2 {
+                font-size: 40px;
+                color: color(myWhite);
+                text-transform: uppercase;
+            }
+            p {
+                padding: 0 0 25px;
+                color: color(myWhite);
+            }
+            form {
+                .custom-input { 
+                    margin-bottom: 10px;
+                    width: 50%;
+                    @include mobile {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+        .header-img {
+            display: none;
+        }
+    }
+}
+
+/* blog content section */
+.blog-content-section {
+    margin: 60px 0 60px;
+    .blog-post {
+            width: 80%;
+            margin: 0 auto;
+        @include mobile {
+        }
+        @include tab {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 65.75% 31.5%;
+            grid-gap: 2.75%;
+        }
+        .feature-post {
+            width: 100%;
+                margin: 0 auto;
+                box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+            @include mobile {
+            }
+            @include tab {
+                width: 100%;
+                box-shadow: none;
+            }
+            figure figcaption {
+                    padding: 0 20px 20px;
+                    h1 {
+                        text-transform: none;
+                    }
+                    
+                    @include mobile {
+                    }
+                    @include tab {
+                        padding: 0;
+                    }
+            }
+            hr {
+                margin-left: 20px;
+                    margin-right: 20px;
+                @include tab {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+            .post-author {
+                padding: 20px 0 30px 20px;
+                @include tab {
+                    padding-left: 0;
+                }
+            }
+        }
+        
+        .trending-post {
+            .trend-item {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 50px;
+                }
+                .trend-title {
+                    width: 100%;
+                    // margin-bottom: -20px; 
+                }
+                hr {
+                    margin: 10px auto;
+                }
+                figure {
+                    display: none;
+                    @include desktop {
+                        display: auto;
+                        width: 35%;
+                        display: block;
+                    }
+                    a img {
+                        height: 100%;
+                    }
+                    }
+
+                    .caption {
+                            width: 100%;
+                            box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+                            padding: 20px;
+                        @include tab {
+                            box-shadow: none;
+                            padding: 0;
+                        }
+                        @include desktop {
+                            width: 65%;
+                        }
+                            a h3 {
+                                padding: 0;
+                                @include desktop {
+                                    padding-left: 15px;
+                                }  
+                                }
+                                .trend-catagory {
+                                    .post-catagory {
+                                        margin-top: 5px;
+                                        @include mobile {
+                                        }
+                                        @include desktop {
+                                            margin-top: 2px;
+                                            margin-left: 15px;
+                                        }
+                                        a {
+                                            strong {
+                                                font-size: 13px;
+                                            }
+                                            
+                                        }
+                                    } 
+                                }
+                    } 
+            .subscribe {
+                margin-top: 45px;
+                p {
+                    margin: 35px 0 15px
+                }
+            }
+            }
+        }     
+    }
+/*------- Post Tab Section ----------*/
+.post-tab-section {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    .post-tab-title {
+        padding-bottom: 20px;
+    }
+    .post-tab {
+            width: 80%;
+            margin: 0 auto;
+        @include tab {
+            display: grid;
+            width: 100%;
+            column-gap: 5%;
+            grid-template-columns: 47.5% 47.5%;
+        }
+        @include laptop {
+            grid-template-columns: 31% 31% 31%;
+            column-gap: 3.5%;
+        }
+        .single-post-tab {
+            margin-bottom: 30px;
+                box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+                figure {
+                    figcaption {
+                        padding: 10px 15px;
+                        a {
+                            h3 {
+                                padding: 15px 0 15px;
+                            }
+                        }
+                        p {
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+        }
+    }
+}
+/*------- pagination section ----------*/
+.pagination-section {
+    margin-bottom: 80px;
+        .pagination { 
+            text-align: center;
+        li {
+            display: inline;
+            a {
+                display: inline-block;
+                text-decoration: none;
+                padding: 0 5px;
+                color: #000;
+                font-size: 18px;
+                // transition: border 0.3s;
+                &:hover {
+                    &:not(.active) {
+                        text-decoration: underline;
+                        color: #00b22d;
+                        
+                    }
+                }
+            } 
+            a.active {
+                border-radius: unset;
+                border: unset;
+                font-weight: bold;
+                color: color(myGreen);
+                
+            }
+        }
+    }   
+}

@@ -1,0 +1,130 @@
+/*.........header section........*/
+
+.header-section{
+    background-color: color(primary);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.1em 0;
+    @include tab{
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+}
+.logo{
+    a{
+        text-decoration: none;
+        color: color(myWhite);
+        font-size: 20px;
+        display: block;
+    }
+}
+.burger{
+    margin-top: 0.5em;
+    cursor: pointer;
+    @include tab{
+        display: none;
+    }
+    div{
+        width: 25px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+}
+.navbar{
+        position: absolute;
+        right: 0;
+        top: 4.8em;
+        background-color: #353537;
+        width: 50%;
+        padding: 2em 2em;
+        display: none;
+        z-index: 111;
+        @include tab{
+            display: flex;
+            justify-content: space-between;
+            position: unset;
+            width: unset;
+            padding: unset;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: column;
+            @include tab{
+                display: flex;
+                flex-direction: unset;
+                justify-content: space-between;
+            }
+        li{
+            list-style-type: none;
+            a{
+                letter-spacing: 1px;
+                color: color(myWhite);
+                margin: 2px;
+                padding: 8px 10px;
+                display: block;
+                text-decoration: none;
+                transition: 0.2s;
+                &:hover{
+                    color: color(myGreen);
+                }
+            }
+            &:nth-child(5) a{
+                font-weight: bold;
+                background-color: color(myGreen);
+                padding: 10px 25px;
+                border-radius: 4px;
+                &:hover{
+                    background-color: color(myGreenDark);
+                    color: color(myWhite);
+                }
+            }
+            @include tab {
+                &:nth-child(4) {
+                    @include tab {
+                        display: none;
+                    }
+                    @include laptop {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .last-nav ul li a{
+        font-weight: bold;
+        background-color: color(myGreen);
+        padding: 10px 25px;
+        border-radius: 4px;
+        &:hover{
+            background-color: color(myGreenDark);
+            color: color(myWhite);
+        }
+    }
+}
+
+.nav-active{
+    display: flex;
+    flex-direction: column;
+    @include tab{
+        flex-direction: unset;
+        justify-content: space-between;
+    }
+}
+
+/*custom nav*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+

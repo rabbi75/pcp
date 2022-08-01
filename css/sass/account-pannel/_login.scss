@@ -1,0 +1,71 @@
+/*login page */
+.user-login {
+        padding-top: 2.5em;
+        padding-bottom: 1em;
+    // @include mobile{
+    //     padding-top: 2.5em;
+    //     padding-bottom: 1em;
+    // }
+    @include tab {
+        padding: 0;
+    }
+    .login-page {
+        width: 86%;
+        margin: 65px auto;
+        // @include mobile {
+        //     width: 86%;
+        //     margin: 65px auto;
+        // }
+        @include tab {
+            width: 65%;
+        }
+        @include laptop {
+            width: 49%;
+        }
+        @include desktop {
+            width: 41%;
+        }
+        .page-logo {
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        .login-panel {
+            border: 1px solid color(myGray);
+            padding: 30px;
+            form {
+                h1 {
+                    text-transform: uppercase;
+                }
+                h3 {
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                }
+                input[type="email"] {
+                    width: 94.5%;
+                }
+                input[type="password"] {
+                    width: 94.5%;
+                }
+                input[type='submit'] {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+            .bottom-link {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                @include mobile {
+                    justify-content: space-between;
+                    flex-direction: row;
+                    flex-wrap: wrap; 
+                }
+                a {
+                    padding-bottom: 8px;
+                }
+            } 
+        }
+    }
+}

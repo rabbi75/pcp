@@ -1,0 +1,67 @@
+/* Service Section */
+.service-section {
+    .service-header {
+        padding-top: 3em;
+        padding-bottom: 3em;
+        text-align: center;
+        @include tab {
+            text-align: unset;
+        }
+        h1 {
+            padding-bottom: 20px;
+        }
+    } 
+    .service-items{
+        @include tab {
+            display: grid;
+            grid-template-columns: 48% 48%;
+            column-gap: 4%;
+            row-gap: 80px;
+        }
+        .service-text {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            @include tab {
+                padding: 0;
+            }
+            h2 {
+                margin-bottom: 12px;
+                margin-top: 0;
+            }
+            p {
+                padding-bottom: 10px;
+            }
+            ul {
+                padding-left: 20px;
+                list-style-type: square;
+                li {
+                    font-size: 18px;
+                    padding-bottom: 5px;
+                    line-height: 1.5em;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+        figure {
+            @include laptop {
+                padding-left: 50px;
+            }
+            img{
+                border: 1px solid rgba(0,0,0,0.2);
+                box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15);
+                max-width: 450px;
+            }
+        }       
+    }
+    .services-btn {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+

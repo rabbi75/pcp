@@ -1,0 +1,40 @@
+/*.........custom style........*/
+.active{
+    border: 1px solid color(myWhite);
+    border-radius: 4px;
+    &:hover{
+        border: 1px solid color(myGreen);
+        border-radius: 4px;
+    }
+}
+.sticy{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: fade 0.5s ease-in;
+}
+
+.toggle{
+    .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .line2{
+        opacity: 0;
+    }
+    .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+}
+
+/*..........animation.........*/
+@keyframes fade{
+
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}

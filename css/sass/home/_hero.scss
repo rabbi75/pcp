@@ -1,0 +1,110 @@
+/*.........hero section........*/
+.hero-section{
+    background-color: color(primary);
+}
+.hero{
+    color: color(myWhite);
+    text-align: center;
+    @include laptop {
+        display: flex;
+    }
+    .hero-image{
+        //max-width: 325px;
+        max-width: 294px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.5;
+        height: 365px;
+        background-color: transparent;
+        animation-name: slide;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        @include mobile { 
+            position: relative;
+            top: 7.2em;
+            opacity: 0.5;
+        }
+        @include tab {
+            max-width: 318px;
+            top: 5.2em;
+            opacity: 0.7;
+        } 
+        @include laptop {
+        max-width: unset;
+        flex: 0 0 365px;
+        top: 4.7em;
+         }
+         @include desktop {
+             top: 1.8em;
+             
+         }
+        @keyframes slide{
+            0% { background-image: url(../images/header/animation/ring-retouch.png);}
+            25% { background-image: url(../images/header/animation/ecommerce-product-background-remove.png); }
+            50% { background-image: url(../images/header/animation/product-background-remove.png); }
+            75% { background-image: url(../images/header/animation/ring-retouch.png); }
+            100% { background-image: url(../images/header/animation/t-shirt-clipping-path.png); }
+        }
+
+        q{
+            display: none;
+            @include laptop {
+                display: block;
+                letter-spacing: 1px;
+                font-size: 20px;
+                position: relative;
+                top: 10em;
+                color: color(myWhite);
+            }
+        }  
+    }
+    .hero-text{
+        margin-top: -24.7em;
+        //margin-top: 22.7em;
+        position: relative;
+        z-index: 99;
+        padding: 3em 0;
+        @include tab {
+            margin-top: -22.4em;
+        }
+        @include laptop {
+            margin-top: 0;
+        }
+        p{
+            text-align: center;
+            font-size: 1.5em;
+            letter-spacing: 1px;
+            @include mobile {
+                font-size: 1.9em;
+            }
+        }
+        form{
+            text-align: center;
+            margin-top: 3em;
+            //margin-top: 1em;
+            q{
+                margin-bottom: 0.5em;
+                font-size: 1em;
+                letter-spacing: 1px;
+                display: block;
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+            .custom-input {
+                margin-bottom: 10px;
+                background-color: color(primary);
+                @include mobile {
+                    width: 40%;
+                }
+                @include tab {
+                    width: 35%;
+                }
+            }
+            // .custom-btn {
+            //     padding: 10px;
+            // }
+        }
+    }
+}

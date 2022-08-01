@@ -1,0 +1,142 @@
+/* blog single/ individual page section */
+.blog-page-section { 
+    margin: 60px 0 60px;
+    .blog-page-post {
+            width: 80%;
+            margin: 0 auto;
+        @include tab {
+            width: 100%;
+        }
+        @include laptop {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 65.75% 31.5%;
+            grid-gap: 2.75%;
+        }
+        .blog-post-details {
+           figure { 
+                 text-decoration: none;
+                 color: color(myBlack);
+                 h1 {
+                    text-transform: none;
+                    margin-top: 0;
+                 }
+                 .post-img {
+                     margin-bottom: 50px;
+                 }
+            figcaption {
+                p{
+                    margin: 10px 0 20px;
+                }
+                h3 {
+                    line-height: 25px;
+                    margin: 60px 0 30px;
+                }
+                ul {
+                    padding-left: 40px;
+                    padding-bottom: 10px;
+                    li {
+                        font-size: 18px; 
+                        line-height: 1.5em;
+                        margin-bottom: 10px;
+                    }
+                }
+                img {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+           }
+           .about-author {
+            display: flex;
+            margin: 40px 0;
+            background-color: #f9f9f9;
+            padding: 40px 0 40px 20px;
+            .author-title {
+                display: grid;
+                padding: 0 15px 0;
+                a {
+                    text-decoration: none;
+                    color: color(myBlack);
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        }
+        /*trending post/widget-right*/
+        .trending-post {
+            .trend-item {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 50px;
+                .trend-title {
+                    width: 100%;
+                }
+                hr {
+                    margin: 10px auto;
+                }
+                figure {
+                    display: none;
+                    @include tab {
+                        display: block;
+                    }
+                    @include laptop {
+                        display: none;
+                    }
+                    @include desktop {
+                        width: 35%;
+                        display: block;
+                    }
+                    img {
+                        height: 100%;
+                    }
+                    }
+                .caption {
+                    width: 100%;
+                    padding: 20px;
+                    box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35);
+                    @include tab {
+                        box-shadow: unset;
+                        padding: 0 0 0 20px;
+                    }
+                    @include laptop {
+                        padding: 0;
+                    }
+                    @include desktop {
+                        width: 65%;
+                        
+                    }
+                    a h3 {
+                        padding: 0;
+                        @include desktop {
+                            padding-left: 15px;
+                        }
+                    }
+                    .trend-catagory {
+                        .post-catagory {
+                            margin-top: 0;
+                            @include tab {
+                                
+                            }
+                            @include desktop {
+                                margin-top: 5px;
+                                margin-left: 15px;
+                            } 
+                            a {
+                                font-size: 13px;
+                            }
+                        }
+                    }   
+                } 
+            .subscribe {
+                margin-top: 35px;
+                p {
+                    margin: 50px 0 20px;
+                }
+            }
+            }
+        }
+    }
+}

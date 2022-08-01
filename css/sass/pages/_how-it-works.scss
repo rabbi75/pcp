@@ -1,0 +1,285 @@
+/*how it works page*/
+.how-it-works-header {
+    padding-top: 45px;
+        .page-section-title {
+            text-align: center;
+            padding-bottom: 45px;
+             h1 {
+               padding-bottom: 15px;
+             }
+        }  
+}
+/*middle-box section*/
+.middle-box-section {
+    background-color: #353537;
+    &:after {
+        border-left: 19px solid transparent;
+        border-right: 19px solid transparent;
+        border-top: 19px solid color(primary);
+        border-bottom-width: 0;
+        content: '';
+        position: absolute;
+        // top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .middle-box {
+        width: 68%;
+        margin: auto;
+        padding: 60px 0 60px;
+        font-size: 32px;
+        color: color(myWhite);
+        text-align: center;
+        line-height: 1.5;
+        font-weight: bold;             
+    }
+}
+/*how it works items */
+.how-it-works-section {
+    padding-top: 80px;
+    .how-it-items {
+        align-items: center;
+
+        /*step one + three + five start*/
+        .step-one, .step-three, .step-five{
+            align-items: center;
+            margin: auto auto 100px;
+            @include tab {
+                display: grid;
+                grid-template-columns: 45% 45%;
+                column-gap: 10%;
+                width: 90%;
+                
+            }
+            .how-it-item-icon {
+                text-align: center;
+                .icon-wrapper {
+                    max-width: 150px;
+                    width: 100%;
+                    margin: 0 auto 10px;
+                    .item-icon {
+                        height: auto;
+                        width: 150px;
+                        .icon-step-one {
+                            @include tab {
+                                height: 198px;
+                                width: 217px;
+                            }
+                        }
+                        .icon-step-three {
+                            @include tab {
+                                height: 230px;
+                                width: 230px;
+                            }
+                        }
+                        .icon-step-five {
+                            height: 200px;
+                            @include tab {
+                                height: 280px;
+                                width: 280px;
+                            }
+                        }
+                    }
+                }   
+            }
+            .how-it-item-text {
+                text-align: center;
+                @include tab {
+                    text-align: unset;
+                }
+                h2 {
+                    font-size: 30px;
+                }
+                p {
+                    &:nth-child(2) {
+                        padding: 10px 0 20px;
+                         font-size: 25px;
+                    }
+                    &:nth-child(5) {
+                        padding-top: 20px;
+                        font-size: 14px;
+                    }
+                }
+                ul {
+                    text-align: left;
+                    padding-left: 18px;
+                    font-size: 17px;
+                    li {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+        /*step two + four start*/
+        .step-two, .step-four{
+            align-items: center;
+            margin: auto auto 100px;
+            display: flex;
+            flex-direction: column-reverse;
+            @include tab {
+                display: grid;
+                grid-template-columns: 45% 45%;
+                column-gap: 10%;
+                width: 90%;
+                
+            }
+            .how-it-item-icon {
+                text-align: center;
+                .icon-wrapper {
+                    max-width: 150px;
+                    width: 100%;
+                    margin: 0 auto 10px;
+                    .item-icon {
+                        height: auto;
+                        width: 150px;
+                        .icon-step-two {
+                            @include tab {
+                                height: 196px;
+                                width: 222px;
+                            }
+                        }
+                        .icon-step-four {
+                            @include tab {
+                                height: 200px;
+                                width: 220px;
+                            }
+                        }
+                    }
+                }    
+            }
+            .how-it-item-text {
+                text-align: center;
+                @include tab {
+                    text-align: right;
+                }
+                
+                h2 {
+                    font-size: 30px;
+                }
+                p {
+                    &:nth-child(2) {
+                        padding: 10px 0 20px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        } /*step two + four end*/
+    }
+}
+
+.how-text-section {
+    .how-text {
+        text-align: center;
+        font-size: 25px;
+        color: color(myBlack);
+        line-height: 1.5;
+
+    }
+}
+
+.how-img-section {
+    padding: 50px 0;
+    .img-tab {
+        width: 56%;
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        @include tab {
+            width: 80%;
+        }
+        .img-item {
+            @include tab {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                flex-wrap: wrap;
+                border: 1px solid color(myGray);
+            }
+            .how-img {
+                figure {
+                    //width: 315px;
+                    img {
+                        max-width: 315px;
+                        border: 1px solid color(myGray);
+                        @include tab {
+                            vertical-align: middle;
+                            border: 0;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+.how-service {
+    padding-bottom: 60px;
+
+    .figure-wrapper {
+        display: block;
+        text-align: center;
+        @include tab {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            column-gap: 3.33%; 
+        }
+    }
+    .figure {
+        margin-bottom: 50px;
+        @include tab {
+            margin-bottom: 0;
+        }
+        .icon-services-shoe-wrapper {
+                max-width: 150px;
+                width: 100%;
+                height: 120px;
+                .icon-services-shoe {
+                    width: 150px;
+                    padding-top: 20px;
+                }
+        }
+        .icon-services-ecommerce-wrapper {
+                max-width: 150px;
+                width: 100%;
+                height: 120px;
+            .icon-services-ecommerce {
+                height: 115px;
+                width: 100%;
+            }
+        }
+        .icon-services-phone-tag-wrapper {
+            max-width: 150px;
+            width: 100%;
+            height: 120px;
+        .icon-services-phone-tag {
+            height: 115px;
+        }
+    }
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    }
+}
+.how-call-to-action {
+    padding: 125px 0;
+    margin: 0 0 60px;
+    background-color: color(primary);
+    .call-to-action {
+        text-align: center;
+        @include mobile {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+            h3 {
+                font-size: 25px;
+                color: color(myWhite);
+                @include mobile {
+                    margin-right: 60px;
+                }
+            }
+    }
+}

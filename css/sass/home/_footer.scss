@@ -1,0 +1,111 @@
+/*------------- Footer Section -----------*/
+.footer-section {
+    background-color: #353537;
+    padding: 50px 0;
+    .big-footer {
+        color: color(myWhite);
+        @include tab {
+            display: grid;
+            grid-template-columns: 31% 31% 31%;
+            column-gap: 2.33%;
+        }
+        @include laptop {
+            grid-template-columns: 24% 24% 24% 24%;
+            column-gap: 1.33%;
+            
+            padding-bottom: 60px;
+        }
+        h5 {
+            font-size: 1em;
+            text-transform: uppercase;
+            padding: 15px 0;
+            letter-spacing: 0.1em;
+        }
+        p {
+            padding: 20px 0 0 0;
+            font-size: 16px;
+        }
+        ul li {
+            padding: 2px 0;
+            margin-bottom: 15px;
+            border-left: 1px solid color(myGreen);
+            padding-left: 10px;
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                color: #ffffff; 
+                font-size: 16px;
+                &:hover {
+                    color: color(myGreen);
+                    transition: 0.2s;
+                }
+            }   
+        }
+        .category {
+            .payment-icon {
+                display: grid;
+                grid-template-columns: 11% 11% 11% 11% 11%;
+                @include tab {
+                    grid-template-columns: auto auto auto auto auto;
+                }
+                @include laptop {
+                    
+                    grid-template-columns: auto auto auto auto auto;
+                }
+                @include desktop{
+                    //padding-right: 27%;
+                }
+                .icon-wrapper {
+                    max-width: 62px;
+                    max-height: 50px;
+                }
+            }
+        }
+    }
+    .small-footer {
+        padding: 20px 0;
+        text-align: center;
+        span {
+            letter-spacing: 3px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        p {
+            color: color(myWhite);
+            font-size: 15px;
+            padding: 10px 0;
+            letter-spacing: 1px;
+        }
+        a {
+            color: color(myWhite);
+            &:hover {
+                color: color(myGreen);
+            }
+        }
+        .social-footer ul {
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 20px 8px 8px;
+                list-style-type: none;
+                img {
+                    width: 20px;
+                    height: auto;
+                }
+                img:hover {
+                    opacity: 0.7;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

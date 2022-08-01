@@ -1,0 +1,373 @@
+/*most important!!!
+here included media & form scss files*/
+@import 'header';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $fontLato;
+    overflow-x: hidden;
+}
+.container{
+    //width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @include mobile {
+        max-width: 540px;
+    }
+    @include tab {
+        max-width: 720px;
+    }
+    @include laptop {
+        max-width: 960px;
+    }
+    @include desktop {
+        max-width: 1140px;
+    }   
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+h3 {
+    letter-spacing: 1px;
+}
+p{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+}
+hr{
+    border: 0;
+    margin: 20px auto;
+    border-top: 1px solid color(myGreen);
+}
+small{
+    color: color(myGray);
+}
+.section-title{
+    padding: 3em 0;
+    text-align: center;
+    h2{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    p{
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+}
+
+.page-section-title {
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    text-align: center;
+    h1, h2 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 30px;
+    }
+    p {
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+
+    }
+}
+.color-green {
+    color: color(myGreen);
+}
+
+.img-responsive{
+    width: 100%;
+}
+.page-header-img {
+    background-size: cover;
+    text-align: center;
+    opacity: 0.8;
+}
+
+/*...............figure style............*/
+.figure-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    //margin-bottom: 3em;
+    .figure {
+        //padding: 0 30px;
+        .icon-wrapper{
+            max-width: 150px;
+            width: 100%;
+            height: 120px;
+            margin: 0 auto 10px;
+        }
+    }
+}
+ 
+.primary-btn{
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: color(myWhite);
+    background-color: color(myGreen);
+    display: inline-block;
+    margin: 1em 0;
+    padding: 11px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.2s;
+    &:hover{
+        background: color(myGreenDark);
+    }
+}
+/*primary link & hover*/
+.primary-link {
+    color: color(myBlack);
+    text-decoration: underline;
+    text-decoration-color: color(myGreen);
+    transition: 0.2s;
+    &:hover {
+        color: color(myGreenDark);
+        text-decoration: none;
+    }
+}
+/*custom link and hover*/
+.custom-link {
+    text-decoration: none;
+    color: color(myBlack);
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: color(myGreenDark);
+        color: color(myGreenDark);
+    }
+}
+/*green url link*/
+.green-link {
+    text-decoration: underline;
+    color: color(myGreen);
+    &:hover {
+        color: color(myBlack);
+    }
+
+}
+/*primary image shadow & width*/
+.primary-img {
+    width: 100%;
+    &:hover {
+        box-shadow: 0 1px 6px rgba(57, 73, 76, 0.70);
+        transition: all 0.2s ease-in-out;
+    }
+}
+/*post author and title*/ 
+.post-author {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    .author-title {
+        display: grid;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+    }
+}
+
+/*samples page img-items*/
+.img-hover {
+    background-repeat: no-repeat;
+    border: 1px solid color(primary);
+    width: 230px;
+    height: 250px;
+    transition: all 0.2s ease;
+    background-position: right center;
+    margin-bottom: 20px;
+    &:hover {
+        background-position: left center;
+        transform: scale(1.1);
+    }
+}
+/*grid item text image section*/
+.grid-items-txt-img-section {
+    padding-top: 30px;
+    .grid-item-txt-img {
+        @include tab {
+            display: grid;
+            grid-template-columns: 45% 45%;
+            column-gap: 10%;
+            width: 80%;
+            margin: auto;
+            align-items: center;
+            align-content: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }       
+        .grid-item-text {
+            text-align: center;
+            @include tab {
+                text-align: left;
+            }
+            p {
+                padding-bottom: 30px;
+            }
+            h2 {
+                text-align: center;
+                @include tab {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    hr {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 80%;
+    }
+}
+
+/*my account page global classes*/
+.input-group {
+    display: block;
+    //margin-top: 50px;
+    //margin-bottom: 20px;
+    @include tab {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        column-gap: 6%;
+    }
+    .input-single {
+        margin-bottom: 25px;
+            h3 {
+                padding-bottom: 10px;
+            }
+            input[type="text"] { 
+                width: 95%;
+                @include mobile {
+                    width: 95%;
+                }
+            }
+            input[type="email"] { 
+                width: 95%;
+                @include mobile {
+                    width: 95%;
+                }
+            }
+            input[type="password"] { 
+                width: 95%;
+                @include mobile {
+                    width: 95%;
+                }
+            }
+    }
+}
+
+ /*custom checkbox with label*/
+.custom-checkbox {
+    margin-top: 10px;
+    //margin-bottom: 30px;
+    .custom-label {
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 12px;
+        font-size: 18px;
+        user-select: none;
+        font-weight: bold;
+    }
+    .custom-label {
+        .tooltip {
+            background-color: color(primary);
+            border-radius: 55%;
+            color: color(myWhite);
+            line-height: 1;
+            padding: 1px 6px;
+            font-size: 12px;
+            font-style: italic;
+            position: relative;
+            display: inline-block;
+            .tooltiptext {
+                visibility: hidden;
+                width: 200px;
+                background-color: color(primary);
+                color: color(myWhite);
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px;
+                position: absolute;
+                z-index: 1;
+                font-size: 15px;
+                line-height: 18px;
+                font-weight: normal;
+                right: -100px;
+                bottom: 14px;
+            }
+            &:hover {
+                .tooltiptext {
+                    visibility: visible;
+                    transition: 0.5s ease-out;
+                }
+            }
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            // cursor: pointer;
+            height: 0;
+            width: 0;
+            &:checked {
+                & ~ .checkmark {
+                    background-color: color(myGreen);
+                    &:after {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .checkmark {
+            &:after {
+                left: 5px;
+                top: 1px;
+                width: 5px;
+                height: 10px;
+                border: solid color(myWhite);
+                border-width: 0 3px 3px 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .checkmark {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        background-color:color(myGray);
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        &:focus {
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+        }
+    } 
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+$fontLato:'Lato';
+$colors: (
+    primary:     #353537,
+    myWhite:     #ffffff,
+    myGreen:     #00B22D,
+    myGray:      #a0a0a0,
+    myBlack:     #000000,
+    myGreenDark: #008329
+);
+
+@function color($colorName) {
+    @return map-get($colors, $colorName);
+}
+
+@import 'media';
+@import 'form';
+@import 'custom';

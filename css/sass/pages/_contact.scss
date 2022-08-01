@@ -1,0 +1,197 @@
+/*contact page */
+/*contact header section input from global*/
+
+/*get in touch section*/
+.get-in-touch-section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin: auto;
+    .get-in-touch-header {
+        width: 80%;
+        text-align: center;
+        padding: 0 0 20px;
+        margin: auto;
+        h1 {
+            padding-bottom: 20px;
+        }
+        p {
+            padding: 10px 0;
+        }
+    }
+    .get-in-touch-form {
+        width: 80%;
+        margin: auto;
+        form {
+            .form-top {
+                @include tab {
+                    display: grid;
+                    grid-template-columns: 30% 30% 30%;
+                    column-gap: 3.33%;
+                }
+                .fname {
+                    margin-bottom: 25px;
+                    h3 {
+                        padding-bottom: 5px;
+                    }
+                    input[type="text"] {
+                        width: 95%;
+                    }
+                }
+                .lname {
+                    margin-bottom: 25px;
+                    h3 {
+                        padding-bottom: 5px;
+                    }
+                    input[type="text"] {
+                        width: 95%;
+                    }
+                }
+                .emailaddress {
+                    margin-bottom: 25px;
+                    h3 {
+                        padding-bottom: 5px;
+                    }
+                    input[type="email"] {
+                        width: 95%;
+                    }
+                }
+            }
+            .form-bottom {
+                padding: 20px 0;
+                margin-right: 20px;
+                h3 {
+                    padding-bottom: 5px;
+                }
+                textarea {
+                    resize: vertical;
+                    width: 100%;
+                    @include tab {
+                        width: 98%;
+                    }
+
+                }
+            }
+            .form-btn {
+                text-align: center;
+                margin-bottom: 50px;
+                input[type="submit"] {
+                    // width: 50%;
+                }
+            } 
+        }
+    }
+    hr {
+        width: 80%;
+    }
+}
+/*subscribe section*/
+.email-sucbscribe-section {
+    width: 50%;
+    margin: auto;
+    padding: 0 30px;
+    .subscribe-header {
+        h2 {
+            //font-size: 30px;
+            padding: 0 0 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            padding: 0 0 20px;
+        }
+    }
+    form {
+        text-align: center;
+        input[type="email"] {
+            width: 100%;
+            max-width: 400px;
+        }
+        input[type="submit"] {
+            
+        }
+    }
+    hr {
+        width: 80%;
+        margin-top: 50px;
+    }
+}
+/*social icon section*/
+.social-icon-section {
+    .all-icon {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-bottom: 30px;
+        @include tab {
+            width: 80%;
+        }
+
+        @include laptop {
+            grid-template-columns: auto auto auto auto;
+        }
+        a {
+            .icon-wrapper {
+                max-width: 150px;
+                height: 120px;
+                margin: auto;
+                .item-icon {
+                    height: auto;
+                    width: 150px;
+                }
+            }
+            h2 {
+                //margin-left: 25px;
+                margin-top: 30px;
+            }
+        }
+    }
+    hr {
+        width: 80%;
+    }
+}
+
+/*employee and location section*/
+.employee-location-section {
+    padding: 0 30px;
+    .employee-location {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 80%;
+        margin: auto;
+        .location-text {
+            padding: 30px 20px 0 0;
+            h2 {
+                font-size: 30px;
+                padding: 0 0 20px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 25px;
+                padding-bottom: 40px;
+
+            }
+            a {
+                text-decoration: none;
+                border-radius: 4px;
+                padding: 10px 12px;
+                color: color(myWhite);
+                background-color: color(myGreen);
+                transition: 0.5s;
+    
+            &:hover {
+                background-color: #039c2a;
+                transition: 0.5s;
+                cursor: pointer;
+                color: #ffffff;
+            }
+    
+            }
+        }
+    }
+    hr {
+        width: 80%;
+        margin: 50px auto;
+    }
+}

@@ -1,0 +1,13 @@
+/*most important
+here included media & form scss files*/
+@import 'header';
+
+/*all account pannel-signup,login, reset pass, get quote, my account*/
+@import 'account-pannel/signup';
+@import 'account-pannel/login';
+@import 'account-pannel/reset-pass';
+@import 'account-pannel/get-quote';
+@import 'account-pannel/my-account';
+@import 'account-pannel/my-quotes';
+
+

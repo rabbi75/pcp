@@ -1,0 +1,112 @@
+/*------------- feature section -------------*/
+.featured-section {
+    //display: none;
+    .feature {
+        //display: none;
+        margin-top: -37px;
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            margin-top: -40px;
+            justify-content: center;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        @include tab {
+            display: grid;
+            grid-template-columns: 45% 45%;
+        }
+        @include laptop{
+            grid-template-columns: 33% 33% 33%;
+            column-gap: 1%;
+        }
+        .feature-item {
+            width: 80%;
+            margin: 0 auto 10px;
+            z-index: 11;
+            display: flex;
+            background-color: #ffffff;
+            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            padding: 15px 25px;
+            @include mobile {
+                width: 60%;
+            }
+            @include tab {
+                width: unset;
+                margin: unset;
+            }
+            &:nth-child(3){
+                @include tab{
+                    position: relative;
+                    left: 50%;
+                }
+                @include laptop{
+                    position: relative;
+                    left: 0%;
+                }
+            }
+            .feature-icon-wrapper{
+                padding-top: 12px;
+                .icon-at {
+                    width: 25px;
+                    height: 25px;
+                    @include mobile {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+                .icon-call {
+                    width: 25px;
+                    height: 25px;
+                    @include mobile {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+                .icon-skype {
+                    width: 25px;
+                    height: 25px;
+                    @include mobile {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+            p{
+                font-size: 14px;
+                padding-left: 15px;
+               @include mobile {
+                font-size: unset;
+                letter-spacing: 0.5px;
+                padding-left: 20px;
+               }
+            }
+        }
+    }
+}
+/*------------- feature mobile section -------------*/
+// .featured-mobile {
+//     display: none;
+//     @include mobile {
+//         display: none;
+//     }
+//     .featured-item {
+//         width: 90%;
+//         position: relative;
+//         top: -40px;
+//         margin-left: auto;
+//         margin-right: auto;
+//         background-color: #ffffff;
+//         box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15);
+//         padding: 10px 15px;
+//         border-radius: 4px;
+//         text-align: center;
+//         p {
+//             font-weight: bold;
+//             font-size: 15px;
+//             letter-spacing: 0.5px;
+//         }
+//     }
+// }
+

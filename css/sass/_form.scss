@@ -1,0 +1,51 @@
+/*.........form section........*/
+@mixin input{
+    font-size: 15px;
+    padding: 9px 10px;
+    font-family: Lato;
+    background-color: transparent;
+    &:focus{
+        outline: none;
+        transition: 0.35s ease-in-out;
+    } 
+}
+
+.input-white{
+    @include input();
+    color: color(myWhite);
+    border: 1px solid color(myWhite);
+    &:focus{
+        border: 1px solid color(myGreen);
+    } 
+}
+.input-primary{
+    @include input();
+    color: color(primary);
+    border: 1px solid color(primary);
+    &:focus{
+        border: 1px solid color(myGreen);
+    } 
+}
+
+@mixin form-btn{
+    padding: 10px 30px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: color(myGreen);
+    border: none;
+    border-radius: 4px;
+    transition: 0.5s;
+    &:hover{
+        transition: 0.2s;
+        cursor: pointer;
+    }
+}
+.form-btn-green{
+    @include form-btn();
+    color: color(myWhite);
+    &:hover{
+        background-color: color(myGreenDark);
+    }
+}

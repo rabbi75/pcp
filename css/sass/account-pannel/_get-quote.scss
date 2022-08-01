@@ -1,0 +1,531 @@
+/* get free quote page */
+.get-quote-section {
+    margin: 60px 0;
+    .get-quote-wrap {
+        width: 80%;
+        margin: auto;
+        .quote-header {
+            text-align: center;
+            h1 {
+                margin: 15px 0;
+            }
+            p {
+                margin-bottom: 15px;
+                
+            }
+            .alert-info {
+                background-color: #f9f9f9;
+                padding: 25px 40px 20px;
+                text-align: center;
+                @include laptop {
+                    text-align: left;
+                }
+                
+            }
+
+        }
+        form {
+            .form-top {
+                .top-name {
+                        display: block;
+                        margin-top: 50px;
+                        margin-bottom: 20px;
+                    @include tab {
+                        display: grid;
+                        grid-template-columns: 47% 47%;
+                        column-gap: 6%;
+                    }
+                    .fname {
+                        margin-bottom: 25px;
+                        h3 {
+                            padding-bottom: 10px;
+                        }
+                        input[type="text"] { 
+                            width: 95%;
+                            @include mobile {
+                                width: 95%;
+                            }
+                        }
+                    }
+                    .lname {
+                        margin-bottom: 25px;
+                        h3 {
+                            padding-bottom: 10px;
+                        }
+                        input[type="text"] {
+                            width: 95%;
+                        }
+                    }
+                }
+                .top-email {
+                    margin-bottom: 25px;
+                    .email-address {
+                        h3 {
+                            padding-bottom: 10px;
+                        }
+                        input[type="email"] {
+                            width: 95%;
+                            @include mobile {
+                                width: 95%;
+                            }
+                            @include tab {
+                                width: 97.5%;
+                            }
+                        }
+                    }
+                }
+            }
+            .form-checkbox {
+                .checkbox-header {
+                    padding: 0 0 10px;
+                }
+                .checkbox-item {
+                    display: block;
+                    @include tab {
+                        display: grid;
+                        grid-template-columns: 46.5% 46.5%;
+                        column-gap: 7%;
+                    }
+                    .item-left {
+                        .custom-label {
+                            display: block;
+                            position: relative;
+                            padding-left: 35px;
+                            margin-bottom: 12px;
+                            // cursor: pointer;
+                            font-size: 18px;
+                            user-select: none;
+                        }
+                        .custom-label {
+                            .tooltip {
+                                background-color: color(primary);
+                                border-radius: 55%;
+                                color: color(myWhite);
+                                line-height: 1;
+                                padding: 1px 6px;
+                                font-size: 12px;
+                                font-style: italic;
+                                position: relative;
+                                display: inline-block;
+                                .tooltiptext {
+                                    visibility: hidden;
+                                    width: 200px;
+                                    background-color: color(primary);
+                                    color: color(myWhite);
+                                    text-align: center;
+                                    border-radius: 6px;
+                                    padding: 5px;
+                                    position: absolute;
+                                    z-index: 1;
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    right: -100px;
+                                    bottom: 14px;
+                                }
+                                &:hover {
+                                    .tooltiptext {
+                                        visibility: visible;
+                                        transition: all 0.5s ease-out;
+                                    }
+                                }
+                            }
+                            input {
+                                position: absolute;
+                                opacity: 0;
+                                // cursor: pointer;
+                                height: 0;
+                                width: 0;
+                                &:checked {
+                                    & ~ .checkmark {
+                                        background-color: color(myGreen);
+                                        &:after {
+                                            display: block;
+
+                                        }
+                                    }
+                                }
+                            }
+                            .checkmark {
+                                &:after {
+                                    left: 5px;
+                                    top: 1px;
+                                    width: 5px;
+                                    height: 10px;
+                                    border: solid color(myWhite);
+                                    border-width: 0 3px 3px 0;
+                                    transform: rotate(45deg);
+                                }
+                            }
+                        }
+                        .checkmark {
+                            position: absolute;
+                            top: 3px;
+                            left: 0;
+                            height: 18px;
+                            width: 18px;
+                            background-color:color(myGray);                     
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                display: none;  
+                            }
+                            &:focus {
+                                &:before {
+                                    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+                                }
+                            }
+                        }                    
+                    }
+                    .item-right {
+                        .custom-label {
+                            display: block;
+                            position: relative;
+                            padding-left: 35px;
+                            margin-bottom: 12px;
+                            // cursor: pointer;
+                            font-size: 18px;
+                            user-select: none;
+                        }
+                        .custom-label {
+                            .tooltip {
+                                background-color: color(primary);
+                                border-radius: 55%;
+                                color: color(myWhite);
+                                line-height: 1;
+                                padding: 1px 6px;
+                                font-size: 12px;
+                                font-style: italic;
+                                position: relative;
+                                display: inline-block;
+                                .tooltiptext {
+                                    visibility: hidden;
+                                    width: 200px;
+                                    background-color: color(primary);
+                                    color: color(myWhite);
+                                    text-align: center;
+                                    border-radius: 6px;
+                                    padding: 5px;
+                                    position: absolute;
+                                    z-index: 1;
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    transition: 0.5s;
+                                    
+                                    right: -100px;
+                                    bottom: 14px;
+                                }
+                                &:hover {
+                                    .tooltiptext {
+                                        visibility: visible;
+                                        transition: 0.5s ease out;
+                                    }
+                                }
+                            }
+                            input {
+                                position: absolute;
+                                opacity: 0;
+                                height: 0;
+                                width: 0;
+                                &:checked {
+                                    & ~ .checkmark {
+                                        background-color: color(myGreen);
+                                        &:after {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                            .checkmark {
+                                &:after {
+                                    left: 5px;
+                                    top: 1px;
+                                    width: 5px;
+                                    height: 10px;
+                                    border: solid color(myWhite);
+                                    border-width: 0 3px 3px 0;
+                                    transform: rotate(45deg);
+                                }
+                            }
+                        }
+                        .checkmark {
+                            position: absolute;
+                            top: 3px;
+                            left: 0;
+                            height: 18px;
+                            width: 18px;
+                            background-color:color(myGray);
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                display: none;
+                            }
+                            &:focus {
+                                box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+                            }
+                        }                    
+                    }
+
+                    }
+            }
+            .img-quantity-resize {
+                    display: block;
+                    margin-top: 25px;
+                @include tab {
+                    display: grid;
+                    grid-template-columns: 46% 46%;
+                    column-gap: 8%;
+                }
+                .img-quantity {
+                    margin-bottom: 15px;
+                    h3 {
+                        padding: 0 0 10px;
+                    }
+                    input[type="number"] {
+                        width: 95%; 
+                    }
+                }
+                .img-resize {
+                    h3 {
+                        padding-bottom: 10px;
+                    }
+                    .custom-radio {
+                        display: block;
+                        position: relative;
+                        padding-left: 35px;
+                        margin-bottom: 12px;
+                        font-size: 18px;
+                        user-select: none;
+                        input {
+                            position: absolute;
+                            opacity: 0;
+                            &:checked {
+                                & ~ .checkmark {
+                                    background-color: color(myGreen);
+                                    &:after {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                        .checkmark {
+                            &:after {
+                                top: 5px;
+                                left: 5px;
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                background: color(myWhite);
+                            }
+                        }
+                    }
+                    .checkmark {
+                        position: absolute;
+                        top: 3px;
+                        left: 0;
+                        height: 18px;
+                        width: 18px;
+                        background-color:color(myGray);
+                        border-radius: 50%;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .resize-yes {
+                @include mobile {
+                    display: block;
+                    margin-bottom: 25px;
+                }
+                @include tab {
+                    display: grid;
+                    grid-template-columns: 46% 46%;
+                    column-gap: 8%;
+                }
+                .img-width {
+                    h3 {
+                        padding: 15px 0 10px;
+                    }
+                    .width-box {
+                        input[type="number"] {
+                            width: 61%;
+                            @include mobile {
+                                width: 79%;
+                            }
+                            @include tab {
+                                width: 68%;
+                            }
+                            @include laptop {
+                                width: 74%;
+                            }
+                            @include desktop {
+                                width: 80%;
+                            }
+                        }
+                        span {
+                            border: 1px solid color(primary);
+                            position: relative;
+                            left: -3px;
+                            top: 0;
+                            border-left: 0;
+                            padding: 8.5px 20px;
+                            background-color:color(myGray);
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .img-height {
+                    h3 {
+                        padding: 15px 0 10px;
+                    }
+                    .height-box {
+                        input[type="number"] {
+                            width: 61%;
+                            @include mobile {
+                                width: 79%;
+                            }
+                            @include tab {
+                                width: 68%;
+                            }
+                            @include laptop {
+                                width: 75%;
+                            }
+                            @include desktop {
+                                width: 80%;
+                            }
+                        }
+                        span {
+                            border: 1px solid color(primary);
+                            position: relative;
+                            left: -3px;
+                            top: 0;
+                            border-left: 0;
+                            padding: 8.5px 20px;
+                            background-color:color(myGray);
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .crop-straight {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                .custom-label {
+                    display: block;
+                    position: relative;
+                    padding-left: 35px;
+                    margin-bottom: 12px;
+                    font-size: 18px;
+                    user-select: none;
+                    font-weight: bold;
+                }
+                .custom-label {
+                    .tooltip {
+                        background-color: color(primary);
+                        border-radius: 55%;
+                        color: color(myWhite);
+                        line-height: 1;
+                        padding: 1px 6px;
+                        font-size: 12px;
+                        font-style: italic;
+                        position: relative;
+                        display: inline-block;
+                        .tooltiptext {
+                            visibility: hidden;
+                            width: 200px;
+                            background-color: color(primary);
+                            color: color(myWhite);
+                            text-align: center;
+                            border-radius: 6px;
+                            padding: 5px;
+                            position: absolute;
+                            z-index: 1;
+                            font-size: 15px;
+                            line-height: 18px;
+                            font-weight: normal;
+                            right: -100px;
+                            bottom: 14px;
+                        }
+                        &:hover {
+                            .tooltiptext {
+                                visibility: visible;
+                                transition: 0.5s ease-out;
+                            }
+                        }
+                    }
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        // cursor: pointer;
+                        height: 0;
+                        width: 0;
+                        &:checked {
+                            & ~ .checkmark {
+                                background-color: color(myGreen);
+                                &:after {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    .checkmark {
+                        &:after {
+                            left: 5px;
+                            top: 1px;
+                            width: 5px;
+                            height: 10px;
+                            border: solid color(myWhite);
+                            border-width: 0 3px 3px 0;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+                .checkmark {
+                    position: absolute;
+                    top: 3px;
+                    left: 0;
+                    height: 18px;
+                    width: 18px;
+                    background-color:color(myGray);
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+                    &:focus {
+                        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+                    }
+                } 
+
+            }
+            .comments {
+                h3 {
+                    margin: 15px 0 15px;
+                }
+                textarea {
+                    width: 95%;
+                    resize:vertical;
+                    // @include mobile {
+                    //     width: 95%;
+                    //     resize:vertical;
+                    // }
+                    @include tab {
+                        width: 96%;
+                    }
+                    @include laptop {
+                        width: 97.5%;
+                    }
+                }
+            }
+            .form-btn {
+                text-align: right;
+                margin-top: 15px;
+                small {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}

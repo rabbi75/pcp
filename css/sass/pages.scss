@@ -1,0 +1,10 @@
+/*most important!!!
+here included media & form scss files*/
+@import 'header';
+
+/*about, contact, how it works, pricing, samples pages*/
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/how-it-works';
+@import 'pages/pricing';
+@import 'pages/samples';

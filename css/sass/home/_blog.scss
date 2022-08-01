@@ -1,0 +1,41 @@
+/*-------------- our blog post ------------*/
+.blog-post-section {
+    .our-blog-post {
+        margin-bottom: 60px;
+        .section-title hr {
+            width: 50%;
+        }
+        .blog-post-item {
+            text-align: center;
+            @include mobile {
+                text-align: unset;
+            }
+            @include tab {
+                display: grid;
+                grid-template-columns: 32% 32% 32%;
+                column-gap: 1.33%;
+            }
+            
+            figure {
+                margin-bottom: 30px;
+                p a {
+                    font-size: 14px;
+                margin: 0 0 5px;
+                text-transform: uppercase;
+                }
+                img {
+                    border: 1px solid color(myGray);
+                    max-width: 450px;
+                }
+                figcaption {
+                    max-width: 450px;
+                    margin: auto;
+                    @include mobile {
+                        margin: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+

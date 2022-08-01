@@ -1,0 +1,195 @@
+.work-samples-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .samples-header{
+        padding-left: 5%;
+        padding-right: 5%;
+        figure {
+            position: relative;
+            text-align: center;
+            padding-bottom: 30px;
+            figcaption {
+                padding-top: 20px;
+                @include tab {
+                    position: absolute;
+                    width: 40%;
+                    top: 0;
+                    right: 5%;
+                    text-align: right;
+                }
+                @include laptop {
+                    width: 40%;
+                    top: 10%;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 30px;
+                    @include tab {
+                        font-weight: bold;
+                        color: color(myWhite);
+                        text-shadow: 0 2px 8px #000;
+                        margin-bottom: 10px;
+                    }
+                    @include laptop {
+                        font-size: 30px;
+                        line-height: 35px;
+                    }
+                }
+
+            }
+        }
+    }
+    hr {
+        width: 90%;
+    }
+}
+.work-sample-item {
+    .sample-catagory {
+        text-align: center;
+        padding-top: 10px;
+        ul {
+            display: block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li {
+                margin-right: 22px; 
+                margin-bottom: 15px;
+                @include tab {
+                    display: inline-block;
+                    border-right: 1px solid color(primary);
+                    padding-right: 25px;
+                }
+                
+                a {
+                    font-size: 18px;
+                    padding: 0;
+                    @include tab {
+                        font-size: 20px;
+                    }
+                }
+                &:nth-child(3) {
+                    @include tab {
+                        border-right: 0;
+                    }
+                    @include laptop {
+                        border-right: 1px solid color(primary);
+                    }
+                }
+                &:nth-child(6) {
+                    @include tab {
+                        border-right: 0;
+                    }
+                    @include laptop {
+                        border-right: 1px solid color(primary);
+                    }
+                }
+                &:nth-child(9) {
+                    @include tab {
+                        border-right: 0;
+                    }                   
+                }
+                &:nth-child(5) {
+                    @include laptop {
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .sample-img {
+        p {
+            padding: 30px 75px;
+        }
+        .img-items {
+            display: block;
+            text-align: -webkit-center;
+            @include mobile {
+                display: grid;
+                grid-template-columns: 40% 40%;
+                justify-content: center;
+                //row-gap: 16px;
+                column-gap: 6%;
+            }
+            @include tab {
+                grid-template-columns: auto auto auto;
+                column-gap: 2.5%;
+            }
+            @include laptop {
+                grid-template-columns: 23% 23% 23% 23%;
+                column-gap: 2.66%;
+            }
+            @include desktop {
+                grid-template-columns: auto auto auto auto;
+                column-gap: 2%;
+            }
+            .item-one {
+                background-image: url(../images/services/clipping/chair-clipping-path-white-background.png);
+            }
+            .item-two {
+                background-image: url(../images/services/clipping/chandelier-white-background.png);
+            }
+            .item-three {
+                background-image: url(../images/services/clipping/cycle-clipping-path-after-before.png);
+            }
+            .item-four {
+                background-image: url(../images/services/clipping/mirror-white-background.png);
+            }
+            .item-five {
+                background-image: url(../images/services/clipping/shoe-white-background.png);
+            }
+            .item-six {
+                background-image: url(../images/services/masking/tree-masking-2.png);
+            }
+            .item-seven {
+                background-image: url(../images/services/shadow/natural/natural-shadow-chair.png);
+            }
+            .item-eight {
+                background-image: url(../images/services/shadow/natural/bag-natural-shadow.png);
+            } 
+        }
+        .sample-btn {
+            text-align: center;
+            padding-top: 30px;
+        }
+    }
+}
+/*Rating Section */
+.rating-section {
+    margin-top: 80px;
+    .rating-items {
+        text-align: center;
+        @include tab {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            column-gap: 3.33%;
+        }
+        figure {
+            padding-bottom: 80px;
+            .icon-wrapper {
+                max-width: 150px;
+                width: 100%;
+                height: 120px;
+                margin: 0 auto 10px;
+                .item-icon {
+                    height: auto;
+                    width: 150px;
+                    padding: 0 0 20px;
+                    .icon-customer-rating {
+                        height: 95px;
+                    }
+                    .icon-happy-customers {
+                        height: 100px;
+                    }
+                }
+            }
+            h2 {
+                font-size: 30px;
+                margin: 20px 0;
+            }
+        }
+    }
+    hr {
+        width: 80%;
+    }
+}
